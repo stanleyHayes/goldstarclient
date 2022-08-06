@@ -52,7 +52,40 @@ const initialState = {
             createdAt: new Date(2022, 2, 21)
         }
     ],
-    shipment: null
+    shipment: null,
+    step: 1,
+    recipientDetails: {
+        name: '',
+        phone: '',
+        email: ''
+    },
+    shippingDetails: {
+        mode: '',
+        origin: {
+            country: '',
+            stateOrRegionOrProvince: '',
+            city: '',
+            addressLine1: '',
+            addressLine2: '',
+            postalCode: ''
+        },
+        destination: {
+            country: '',
+            stateOrRegionOrProvince: '',
+            city: '',
+            addressLine1: '',
+            addressLine2: '',
+            postalCode: ''
+        }
+    },
+    packages: [],
+    paymentDetails: {
+        cardholderName: '',
+        cvv: '',
+        expiryMonth: '',
+        expiryYear: '',
+        cardNumber: ''
+    }
 };
 
 
@@ -104,10 +137,29 @@ const getShipments = createAsyncThunk('shipment/getShipments',
 const shipmentSlice = createSlice({
     name: 'shipment',
     initialState,
-    reducers: {},
+    reducers: {
+        goTo: (state, action) => {
+            state.step = action.payload
+        },
+        next: (state) => {
+            state.step += 1
+        },
+        previous: (state) => {
+            state.step -= 1
+        },
+        saveRecipientDetails: (state, action) => {
+            state.recipientDetails = action.payload
+        },
+        saveShipmentDetails: (state, action) => {
+            state.shipmentDetails = action.payload
+        },
+        savePaymentDetails: (state, action) => {
+            state.paymentDetails = action.payload
+        }
+    },
     extraReducers: {}
 });
 
-export const SHIPMENT_ACTION_CREATORS = {createShipment, getShipments, updateShipment, getShipment};
+export const SHIPMENT_ACTION_CREATORS = {createShipment, getShipments, updateShipment, getShipment, ...shipmentSlice.actions};
 export const selectShipment = state => state.shipment;
 export default shipmentSlice.reducer;

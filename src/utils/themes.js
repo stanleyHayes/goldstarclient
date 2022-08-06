@@ -15,7 +15,8 @@ const lightTheme = createTheme({
             primary: '#384054',
             secondary: '#b0b7c9',
             accent: '#BBA14f',
-            title: '#384054'
+            title: '#384054',
+            disabledSecondary: 'rgba(187,161,79,0.4)'
         },
         background: {
             default: 'rgb(228, 235, 241)',
@@ -28,7 +29,7 @@ const lightTheme = createTheme({
         mode: "light"
     },
     shape: {
-        borderRadius: 32
+        borderRadius: 8
     }
 });
 
@@ -47,7 +48,8 @@ const darkTheme = createTheme({
             primary: '#cfd1d6',
             secondary: '#717488',
             accent: '#BBA14f',
-            title: '#dcdce0'
+            title: '#dcdce0',
+            disabledSecondary: 'rgba(187,161,79,0.4)'
         },
         background: {
             default: '#0f0f11',
@@ -61,7 +63,7 @@ const darkTheme = createTheme({
         mode: 'dark'
     },
     shape: {
-        borderRadius: 32
+        borderRadius: 8
     }
 });
 

@@ -22,7 +22,7 @@ import {selectDashboard} from "../../redux/features/dashboard/dashboard-slice";
 import React from "react";
 import Stat from "../../components/shared/stat";
 import {green, grey, red} from "@mui/material/colors";
-import {EditOutlined, TrendingUp, VisibilityOutlined} from "@mui/icons-material";
+import {EditOutlined, KeyboardArrowRight, TrendingUp, VisibilityOutlined} from "@mui/icons-material";
 import ProgressLabel from "react-progress-label";
 import greeting from "greet-by-time";
 import {selectAuth} from "../../redux/features/auth/auth-slice";
@@ -228,6 +228,36 @@ const DashboardPage = () => {
                     </Grid>
 
                     <Box sx={{mt: 4}}>
+
+                        <Grid container={true} spacing={2} alignItems="center" justifyContent="space-between">
+                            <Grid item={true} xs={12} md="auto">
+                                <Typography variant="h4" sx={{color: 'secondary.main'}}>
+                                    Latest Shipments
+                                </Typography>
+                            </Grid>
+                            <Grid item={true} xs={12} md={2}>
+                                <Link to="/shipments" style={{textDecoration: 'none'}}>
+                                    <Button
+                                        fullWidth={true}
+                                        sx={{
+                                            borderTopRightRadius: 16,
+                                            borderBottomRightRadius: 0,
+                                            borderBottomLeftRadius: 16,
+                                            borderTopLeftRadius: 0,
+                                            textTransform: 'capitalize'
+                                        }}
+                                        color="secondary"
+                                        variant="text"
+                                        endIcon={<KeyboardArrowRight />}
+                                        disableElevation={true}>
+                                        View Shipments
+                                    </Button>
+                                </Link>
+                            </Grid>
+                        </Grid>
+
+                        <Divider variant="fullWidth" sx={{my: 2}} light={true}/>
+
                         {dashboard && dashboard.latestShipments.length === 0 ? (
                             <Box>
                                 <TableContainer component={Paper} sx={{mb: 4}}>

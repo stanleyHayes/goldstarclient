@@ -63,9 +63,9 @@ const DesktopHeader = () => {
                             <Avatar
                                 onClick={handleMenuOpen}
                                 sx={{
-                                    borderTopRightRadius: 16,
+                                    borderTopRightRadius: 8,
                                     borderBottomRightRadius: 0,
-                                    borderBottomLeftRadius: 16,
+                                    borderBottomLeftRadius: 8,
                                     borderTopLeftRadius: 0,
                                     backgroundColor: 'light.secondary',
                                     cursor: 'pointer'
@@ -96,9 +96,9 @@ const DesktopHeader = () => {
                                     padding: 1,
                                     fontSize: 18,
                                     backgroundColor: 'light.secondary',
-                                    borderTopRightRadius: 16,
+                                    borderTopRightRadius: 8,
                                     borderBottomRightRadius: 0,
-                                    borderBottomLeftRadius: 16,
+                                    borderBottomLeftRadius: 8,
                                     borderTopLeftRadius: 0,
                                 }}/>
                         </Stack>
@@ -110,9 +110,9 @@ const DesktopHeader = () => {
                                     padding: 1,
                                     fontSize: 18,
                                     backgroundColor: 'light.secondary',
-                                    borderTopRightRadius: 16,
+                                    borderTopRightRadius: 8,
                                     borderBottomRightRadius: 0,
-                                    borderBottomLeftRadius: 16,
+                                    borderBottomLeftRadius: 8,
                                     borderTopLeftRadius: 0,
                                 }}/>
                         </Badge>
@@ -125,9 +125,9 @@ const DesktopHeader = () => {
                                     padding: 1,
                                     fontSize: 18,
                                     backgroundColor: 'light.secondary',
-                                    borderTopRightRadius: 16,
+                                    borderTopRightRadius: 8,
                                     borderBottomRightRadius: 0,
-                                    borderBottomLeftRadius: 16,
+                                    borderBottomLeftRadius: 8,
                                     borderTopLeftRadius: 0,
                                 }}/>
                         </Link>
@@ -284,9 +284,9 @@ const DesktopHeader = () => {
                                     color: 'secondary.main',
                                     padding: 1,
                                     fontSize: 18,
-                                    borderTopRightRadius: 16,
+                                    borderTopRightRadius: 8,
                                     borderBottomRightRadius: 0,
-                                    borderBottomLeftRadius: 16,
+                                    borderBottomLeftRadius: 8,
                                     borderTopLeftRadius: 0,
                                     backgroundColor: 'light.secondary'
                                 }}/>
@@ -298,9 +298,9 @@ const DesktopHeader = () => {
                                     color: 'secondary.main',
                                     padding: 1,
                                     fontSize: 18,
-                                    borderTopRightRadius: 16,
+                                    borderTopRightRadius: 8,
                                     borderBottomRightRadius: 0,
-                                    borderBottomLeftRadius: 16,
+                                    borderBottomLeftRadius: 8,
                                     borderTopLeftRadius: 0,
                                     backgroundColor: 'light.secondary'
                                 }}/>
