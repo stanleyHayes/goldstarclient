@@ -23,7 +23,7 @@ const SidebarLink = ({path, label, active, icon}) => {
                     px: 2,
                     py: 0.5
                 }}
-                direction="row" spacing={1.5} justifyContent="space-between" alignItems="center">
+                direction="row" justifyContent="space-between" alignItems="center">
                 {icon}
                 <Button
                     fullWidth={true}

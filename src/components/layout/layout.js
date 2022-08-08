@@ -14,7 +14,7 @@ const Layout = ({children}) => {
             <Box
                 sx={{
                     display: {xs: 'none', lg: 'block'},
-                    flexBasis: {xs: '0%', md: '30%', lg: '25%', xl: '20%'},
+                    flexBasis: {xs: '0%', md: '25%', lg: '20%', xl: '20%'},
                     maxHeight: '100vh',
                     overflowY: 'hidden',
                     overflowX: 'hidden',
