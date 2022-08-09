@@ -45,7 +45,9 @@ const store = configureStore({
                 lastName: 'Lopez',
                 fullName: 'Inigo Lopez',
                 email: 'inigo.lopez@jesuit.com',
-                username: 'inigolopez'
+                username: 'inigolopez',
+                phone: '+12029844170',
+                status: 'active'
             }
         }
     },

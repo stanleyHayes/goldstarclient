@@ -27,6 +27,8 @@ import ShipmentDetailPage from "./pages/shipments/shipment-detail-page";
 import ShipmentsPage from "./pages/shipments/shipments-page";
 import ContactPage from "./pages/about/contact-page";
 import WelcomePage from "./pages/authentication/welcome-page";
+import UpdateProfilePage from "./pages/account/update-profile-page";
+import ChangePasswordPage from "./pages/account/change-password-page";
 
 function App() {
   const {themeVariant} = useSelector(selectUI);
@@ -47,6 +49,8 @@ function App() {
           <Route element={<AboutPage/>} exact={true} path="/about"/>
           <Route element={<HelpPage/>} exact={true} path="/help"/>
           <Route element={<ProfilePage/>} exact={true} path="/profile"/>
+          <Route element={<UpdateProfilePage/>} exact={true} path="/update-profile"/>
+          <Route element={<ChangePasswordPage/>} exact={true} path="/change-password"/>
           <Route element={<SettingsPage/>} exact={true} path="/settings"/>
           <Route element={<TestimonialsPage/>} exact={true} path="/testimonials"/>
           <Route element={<VerifyAccountPage/>} exact={true} path="/auth/verify/:token"/>

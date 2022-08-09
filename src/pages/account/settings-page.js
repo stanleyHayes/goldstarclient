@@ -1,16 +1,16 @@
 import {Container, Typography} from "@mui/material";
-import AuthLayout from "../../components/layout/layout";
+import Layout from "../../components/layout/layout";
 
 const SettingsPage = () => {
 
     return (
-        <AuthLayout>
+        <Layout>
             <Container>
                 <Typography variant="h3" align="center">
                     Page Under Construction
                 </Typography>
             </Container>
-        </AuthLayout>
+        </Layout>
     )
 }
 
