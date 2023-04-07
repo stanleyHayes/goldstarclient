@@ -20,7 +20,6 @@ import {
 import loginLogo from "./../../assets/images/sign-up.png";
 import {useFormik} from "formik";
 import * as yup from "yup";
-import "yup-phone";
 import {Link} from "react-router-dom";
 import {
     CallOutlined,
@@ -78,7 +77,7 @@ const RegisterPage = () => {
             confirmPassword: yup.string()
                 .required('confirm password required')
                 .oneOf([yup.ref('password'), null], 'Passwords must match'),
-            phoneNumber: yup.string().phone('Enter valid phone number').required('Phone number required')
+            phoneNumber: yup.string().required('Phone number required')
         })
     });
 
@@ -572,30 +571,33 @@ const RegisterPage = () => {
                                     </Grid>
                                 </Grid>
 
-                                <LoadingButton
-                                    onClick={formik.handleSubmit}
-                                    type="submit"
-                                    size="large"
-                                    color="secondary"
-                                    sx={{
-                                        textTransform: 'capitalize',
-                                        py: 1.2,
-                                        borderTopRightRadius: 32,
-                                        borderBottomRightRadius: 0,
-                                        borderBottomLeftRadius: 32,
-                                        borderTopLeftRadius: 32,
-                                    }}
-                                    fullWidth={false}
-                                    loadingPosition="start"
-                                    startIcon={authLoading ?
-                                        <CircularProgress color="secondary"/> : null}
-                                    loadingIndicator={authLoading ?
-                                        <CircularProgress color="secondary"/> : null}
-                                    loading={authLoading}
-                                    variant="contained"
-                                    disableElevation={true}>
-                                    {authLoading ? 'Creating account...' : 'Create an account'}
-                                </LoadingButton>
+                                <Grid mb={2} container={true} spacing={2} alignItems="center">
+                                    <Grid item={true} xs={12} md={6}>
+                                        <LoadingButton
+                                            fullWidth={true}
+                                            type="submit"
+                                            size="large"
+                                            color="secondary"
+                                            sx={{
+                                                textTransform: 'capitalize',
+                                                py: 1.2,
+                                                borderTopRightRadius: 32,
+                                                borderBottomRightRadius: 0,
+                                                borderBottomLeftRadius: 32,
+                                                borderTopLeftRadius: 32,
+                                            }}
+                                            loadingPosition="start"
+                                            startIcon={authLoading ?
+                                                <CircularProgress color="secondary"/> : null}
+                                            loadingIndicator={authLoading ?
+                                                <CircularProgress color="secondary"/> : null}
+                                            loading={authLoading}
+                                            variant="contained"
+                                            disableElevation={true}>
+                                            {authLoading ? 'Creating account...' : 'Create an account'}
+                                        </LoadingButton>
+                                    </Grid>
+                                </Grid>
                             </Box>
                         </form>
                     </Box>

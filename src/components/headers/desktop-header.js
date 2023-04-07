@@ -42,7 +42,12 @@ const DesktopHeader = () => {
     const {authData} = useSelector(selectAuth);
 
     return (
-        <Toolbar variant="regular">
+        <Toolbar
+            sx={{
+                backgroundColor: "background.transparent",
+                backdropFilter: "blur(5.5px)"
+            }}
+            variant="regular">
             <Container maxWidth="xl">
                 <Stack
                     divider={<Divider variant="fullWidth" light={true}/>}

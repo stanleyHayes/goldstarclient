@@ -50,7 +50,7 @@ const UpdateProfilePage = () => {
             lastName: yup.string().required('Last name required'),
             username: yup.string().required('Username required'),
             email: yup.string().email('Enter a valid email').required('Email required'),
-            phone: yup.string().phone("Enter a valid phone").required('Phone required'),
+            phone: yup.string().required('Phone required'),
             address: yup.object().shape({
                 country: yup.string().oneOf(['Ghana', 'Other', '']).required('Country required'),
                 region: yup.string().required('Country required'),

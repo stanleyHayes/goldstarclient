@@ -9,11 +9,12 @@ const Header = () => {
             position="sticky"
             variant="elevation"
             elevation={0}
-            color="transparent"
             sx={{
                 borderBottomWidth: 1,
                 borderBottomStyle: 'solid',
-                borderBottomColor: 'divider'
+                borderBottomColor: 'divider',
+                backgroundColor: "background.transparent",
+                backdropFilter: "blur(5.5px)"
             }}>
             <Box sx={{display: {xs: 'none', lg: 'block'}}}>
                 <DesktopHeader/>

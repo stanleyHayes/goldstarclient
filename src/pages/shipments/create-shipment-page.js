@@ -50,7 +50,7 @@ const CreateShipmentPage = () => {
         validationSchema: Yup.object().shape({
             name: Yup.string().required('Recipient name required'),
             email: Yup.string().required('Recipient email required').email('Invalid email'),
-            phone: Yup.string().required('Recipient phone required').phone('Invalid phone'),
+            phone: Yup.string().required('Recipient phone required'),
         }),
         initialValues: {
             name: recipientDetails.name,

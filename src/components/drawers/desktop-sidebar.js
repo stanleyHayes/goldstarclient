@@ -1,17 +1,17 @@
 import {Avatar, Box, Stack, Typography} from "@mui/material";
 import DesktopSidebarLink from "../shared/desktop-sidebar-link";
 import {
-    AcUnit,
-    AcUnitOutlined, Calculate, CalculateOutlined,
+    Calculate,
+    CalculateOutlined,
     Dashboard,
     DashboardOutlined,
-    Groups,
-    GroupsOutlined,
-    KeyboardArrowRight, LocalShipping, LocalShippingOutlined,
+    KeyboardArrowRight,
+    LocalShipping,
+    LocalShippingOutlined,
     MonetizationOn,
-    MonetizationOnOutlined, Route, RouteOutlined,
-    Shop,
-    ShopOutlined
+    MonetizationOnOutlined,
+    Route,
+    RouteOutlined
 } from "@mui/icons-material";
 import {useLocation} from "react-router";
 import {Link} from "react-router-dom";

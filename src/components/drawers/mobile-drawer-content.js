@@ -35,7 +35,11 @@ const MobileDrawerContent = () => {
     const {authData} = useSelector(selectAuth);
 
     return (
-        <Box sx={{width: {xs: '80vw', sm: '50vw', md: '50vw', lg: '20vw'}}}>
+        <Box sx={{
+            backgroundColor: "background.transparent",
+            backdropFilter: "blur(5.5px)",
+            width: {xs: '80vw', sm: '50vw', md: '50vw', lg: '20vw'}
+        }}>
             <Box sx={{height: '100%'}}>
                 <Stack
                     sx={{height: '100%', py: 2}}
@@ -123,14 +127,14 @@ const MobileDrawerContent = () => {
                                 pathname === '/calculator' ?
                                     <Calculate
                                         sx={{
-                                        color: 'secondary.main',
-                                        borderRadius: '100%',
-                                        borderWidth: 0.1,
-                                        borderColor: 'secondary.main',
-                                        borderStyle: 'solid',
-                                        fontSize: 18,
-                                        padding: 0.6
-                                    }}/> :
+                                            color: 'secondary.main',
+                                            borderRadius: '100%',
+                                            borderWidth: 0.1,
+                                            borderColor: 'secondary.main',
+                                            borderStyle: 'solid',
+                                            fontSize: 18,
+                                            padding: 0.6
+                                        }}/> :
                                     <CalculateOutlined
                                         sx={{
                                             color: 'text.secondary',

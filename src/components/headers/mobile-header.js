@@ -9,7 +9,11 @@ const MobileHeader = () => {
     const dispatch = useDispatch();
 
     return (
-        <Toolbar variant="regular">
+        <Toolbar
+            sx={{
+                backgroundColor: "background.transparent",
+                backdropFilter: "blur(5.5px)"
+        }} variant="regular">
             <Stack
                 sx={{width: '100%'}}
                 direction="row"

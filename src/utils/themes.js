@@ -21,7 +21,7 @@ const lightTheme = createTheme({
         background: {
             default: 'rgb(228, 235, 241)',
             paper: '#ffffff',
-            transparent: 'rgba(255,255,255,0.50)'
+            transparent: 'rgba(255,255,255,0.10)'
         },
         light: {
             secondary: 'rgba(187,161,79,0.15)'
@@ -54,7 +54,7 @@ const darkTheme = createTheme({
         background: {
             default: '#0f0f11',
             paper: '#1b1c20',
-            transparent: 'rgba(45,51,59,0.50)',
+            transparent: 'rgba(45,51,59,0.10)',
             drawer: '#232428'
         },
         light: {
